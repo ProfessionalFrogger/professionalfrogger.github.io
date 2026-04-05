@@ -2,12 +2,428 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>ProfessionalFrogger</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <link rel="icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProfessionalFrogger — a bnuuy online</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Pacifico&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <h1>Good Evening</h1>
+
+  <!-- Background deco blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <!-- ───────────────── NAV ───────────────── -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <!-- Bunny ears logo -->
+        <!-- <svg class="logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ProfessionalFrogger bunny logo">
+          <ellipse cx="15" cy="16" rx="5" ry="12" fill="var(--pink-mid)" stroke="var(--pink-light)" stroke-width="1.5"/>
+          <ellipse cx="15" cy="16" rx="2.5" ry="8" fill="var(--pink-inner)"/>
+          <ellipse cx="33" cy="16" rx="5" ry="12" fill="var(--pink-mid)" stroke="var(--pink-light)" stroke-width="1.5"/>
+          <ellipse cx="33" cy="16" rx="2.5" ry="8" fill="var(--pink-inner)"/>
+          <ellipse cx="24" cy="31" rx="13" ry="11" fill="var(--brown-light)" stroke="var(--pink-mid)" stroke-width="1.5"/>
+          <ellipse cx="24" cy="33" rx="8" ry="7" fill="var(--brown-pale)"/>
+          <circle cx="19.5" cy="29" r="2.2" fill="#2a1a33"/>
+          <circle cx="28.5" cy="29" r="2.2" fill="#2a1a33"/>
+          <circle cx="20.2" cy="28.4" r="0.7" fill="white"/>
+          <circle cx="29.2" cy="28.4" r="0.7" fill="white"/>
+          <ellipse cx="24" cy="33.5" rx="2" ry="1.3" fill="var(--pink-inner)"/>
+          <line x1="17" y1="35" x2="10" y2="33" stroke="var(--brown-mid)" stroke-width="1" stroke-linecap="round"/>
+          <line x1="17" y1="36.5" x2="9" y2="36.5" stroke="var(--brown-mid)" stroke-width="1" stroke-linecap="round"/>
+          <line x1="31" y1="35" x2="38" y2="33" stroke="var(--brown-mid)" stroke-width="1" stroke-linecap="round"/>
+          <line x1="31" y1="36.5" x2="39" y2="36.5" stroke="var(--brown-mid)" stroke-width="1" stroke-linecap="round"/>
+        </svg> -->
+        <span class="nav-logo-text">ProfessionalFrogger</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#content" class="nav-link">Content</a></li>
+        <li><a href="#lore" class="nav-link">Lore</a></li>
+        <li><a href="#links" class="nav-link">Links</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ───────────────── HERO ───────────────── -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <!-- <div class="hero-badge">he / him</div> -->
+        <h1 class="hero-title">
+          <span class="hero-title-small">hi, i'm</span>
+          ProfessionalFrogger
+        </h1>
+        <p class="hero-tagline">a bnuuy on the internet<br>professional procrastinator, full-time fluff</p>
+        <div class="hero-cta-row">
+          <a href="#links" class="btn btn-primary">find me online</a>
+          <a href="#about" class="btn btn-ghost">learn more</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <!-- Large decorative bunny SVG -->
+        <img src="stu.svg" alt="" class="hero-bunny" />
+
+        <!-- Floating sparkle SVGs -->
+        <div class="sparkle sparkle-1">
+          <svg viewBox="0 0 24 24" fill="var(--pink-light)"><path d="M12 2 L13.5 9 L20 12 L13.5 15 L12 22 L10.5 15 L4 12 L10.5 9 Z"/></svg>
+        </div>
+        <div class="sparkle sparkle-2">
+          <svg viewBox="0 0 24 24" fill="var(--purple-light)"><path d="M12 2 L13.5 9 L20 12 L13.5 15 L12 22 L10.5 15 L4 12 L10.5 9 Z"/></svg>
+        </div>
+        <div class="sparkle sparkle-3">
+          <svg viewBox="0 0 24 24" fill="var(--brown-pale)"><path d="M12 2 L13.5 9 L20 12 L13.5 15 L12 22 L10.5 15 L4 12 L10.5 9 Z"/></svg>
+        </div>
+        <div class="paw-deco paw-1">
+          <!-- <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="26" rx="10" ry="9" fill="var(--pink-mid)" opacity="0.5"/>
+            <circle cx="12" cy="16" r="4" fill="var(--pink-mid)" opacity="0.5"/>
+            <circle cx="20" cy="13" r="4" fill="var(--pink-mid)" opacity="0.5"/>
+            <circle cx="28" cy="16" r="4" fill="var(--pink-mid)" opacity="0.5"/>
+          </svg> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── ABOUT ───────────────── -->
+    <section class="section about-section" id="about">
+      <div class="section-inner">
+        <div class="section-label">who am i</div>
+        <h2 class="section-title">About the Bnuuy</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Hey there! I'm <strong>ProfessionalFrogger</strong> — a purple-loving bunny who somehow ended up on the internet. I screenwrite, I ocassionally stream, I make 3D content, and I hop around various corners of the fandom.</p>
+            <p>Despite the name, I am not, in fact, a frog. I'm a bnuuy. Long story.</p>
+            <p>You'll find me doing variety gaming streams, hanging out in my Discord, and occasionally uploading videos when I remember I have a YouTube channel.</p>
+          </div>
+          <div class="about-cards">
+            <div class="info-card">
+              <!-- Paw icon -->
+              <div class="info-card-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <ellipse cx="20" cy="27" rx="11" ry="10" fill="var(--pink-mid)"/>
+                  <circle cx="11" cy="16" r="4.5" fill="var(--pink-mid)"/>
+                  <circle cx="20" cy="12" r="4.5" fill="var(--pink-mid)"/>
+                  <circle cx="29" cy="16" r="4.5" fill="var(--pink-mid)"/>
+                  <ellipse cx="14" cy="27" rx="3" ry="4" fill="var(--pink-inner)"/>
+                  <ellipse cx="20" cy="30" rx="3" ry="4" fill="var(--pink-inner)"/>
+                  <ellipse cx="26" cy="27" rx="3" ry="4" fill="var(--pink-inner)"/>
+                </svg>
+              </div>
+              <div class="info-card-label">Species</div>
+              <div class="info-card-value">Bunny (bnuuy)</div>
+            </div>
+            <div class="info-card">
+              <!-- Heart icon -->
+              <div class="info-card-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M20 32 C20 32 6 22 6 13 C6 8.6 9.6 5 14 5 C16.5 5 18.8 6.2 20 8 C21.2 6.2 23.5 5 26 5 C30.4 5 34 8.6 34 13 C34 22 20 32 20 32Z" fill="var(--pink-mid)"/>
+                </svg>
+              </div>
+              <div class="info-card-label">Pronouns</div>
+              <div class="info-card-value">He / Him</div>
+            </div>
+            <div class="info-card">
+              <!-- Controller icon -->
+              <div class="info-card-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="6" y="13" width="28" height="16" rx="8" fill="var(--purple-main)"/>
+                  <rect x="11" y="17" width="2" height="8" rx="1" fill="white" opacity="0.8"/>
+                  <rect x="8" y="20" width="8" height="2" rx="1" fill="white" opacity="0.8"/>
+                  <circle cx="26" cy="18" r="2" fill="var(--pink-light)" opacity="0.9"/>
+                  <circle cx="30" cy="22" r="2" fill="var(--pink-light)" opacity="0.9"/>
+                  <circle cx="26" cy="26" r="2" fill="var(--pink-light)" opacity="0.9"/>
+                  <circle cx="22" cy="22" r="2" fill="var(--pink-light)" opacity="0.9"/>
+                  <circle cx="18" cy="22" r="1.5" fill="white" opacity="0.5"/>
+                  <circle cx="22" cy="22" r="1.5" fill="white" opacity="0.5"/>
+                </svg>
+              </div>
+              <div class="info-card-label">Vibe</div>
+              <div class="info-card-value">Gamer + Chaotic</div>
+            </div>
+            <div class="info-card">
+              <!-- Star icon -->
+              <div class="info-card-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M20 5 L23 15 L34 15 L25 21 L28 32 L20 26 L12 32 L15 21 L6 15 L17 15 Z" fill="var(--purple-light)"/>
+                </svg>
+              </div>
+              <div class="info-card-label">Colors</div>
+              <div class="info-card-value">Purple, Tawny Brown</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── CONTENT ───────────────── -->
+    <section class="section content-section" id="content">
+      <div class="section-inner">
+        <div class="section-label">what i do</div>
+        <h2 class="section-title">Content</h2>
+        <div class="content-grid">
+
+          <div class="content-card card-twitch">
+            <div class="content-card-bg"></div>
+            <!-- Twitch SVG -->
+            <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/>
+            </svg>
+            <h3>Twitch</h3>
+            <p>Variety streams — games, chill hangouts, chaos. Come say hi in chat!</p>
+            <a href="https://twitch.tv/ProfessionalFrogger" target="_blank" rel="noopener noreferrer" class="content-card-btn">Watch Live</a>
+          </div>
+
+          <div class="content-card card-youtube">
+            <div class="content-card-bg"></div>
+            <!-- YouTube SVG -->
+            <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+            </svg>
+            <h3>YouTube</h3>
+            <p>VODs, highlights, and occasionally actual edited videos when motivation strikes.</p>
+            <a href="https://youtube.com/@ProfessionalFrogger" target="_blank" rel="noopener noreferrer" class="content-card-btn">Watch Videos</a>
+          </div>
+
+          <div class="content-card card-discord">
+            <div class="content-card-bg"></div>
+            <!-- Discord SVG -->
+            <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.08.11 18.1.129 18.115a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+            <h3>Discord</h3>
+            <p>The Warren — a cozy community server to hang out between streams.</p>
+            <a href="https://discord.gg/tX2BAM5D" target="_blank" rel="noopener noreferrer" class="content-card-btn">Join Server</a>
+          </div>
+
+          <div class="content-card card-barq">
+            <div class="content-card-bg"></div>
+            <!-- Barq paw icon (custom) -->
+            <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <ellipse cx="12" cy="15.5" rx="7" ry="6.5"/>
+              <circle cx="5.5" cy="9" r="2.8"/>
+              <circle cx="12" cy="7" r="2.8"/>
+              <circle cx="18.5" cy="9" r="2.8"/>
+            </svg>
+            <h3>Barq</h3>
+            <p>Furry-first social — find me on the fandom's favorite social network.</p>
+            <a href="https://barq.app/ProfessionalFrogger" target="_blank" rel="noopener noreferrer" class="content-card-btn">Find me on Barq</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── LORE ───────────────── -->
+    <section class="section lore-section" id="lore">
+      <div class="section-inner">
+        <div class="section-label">character</div>
+        <h2 class="section-title">The Lore</h2>
+        <div class="lore-grid">
+          <div class="lore-item">
+            <div class="lore-dot"></div>
+            <div class="lore-content-block">
+              <h3 class="lore-item-title">The Name</h3>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;Yes, "ProfessionalFrogger" is a bunny name. Yes, it's been that way for years. No, I'm not changing it. The origin story is lost to antiquity. One day I'll remember it.</p>
+            </div>
+          </div>
+          <div class="lore-item">
+            <div class="lore-dot"></div>
+            <div class="lore-content-block">
+              <h3 class="lore-item-title">The History</h3>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;I've been a furry since I was five or six. My first fursona was an unnamed cheetah when I was in kindergarden. We were dressing like animals for a play and I picked a cheetah.<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;When I was nine, my interest in the furry fandom itself started with the release of Star Fox 64. The idea that animals could walk, talk and act as humans was facinating to me.
+              </p>
+            </div>
+          </div>
+          <div class="lore-item">
+            <div class="lore-dot"></div>
+            <div class="lore-content-block">
+              <h3 class="lore-item-title">The Design</h3>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;Soft tawny-brown coat with lighter underfur. Inner ears are a lighter. I have an inexplicable obsession with purple.</p>
+            </div>
+          </div>
+          
+          <div class="lore-item">
+            <div class="lore-dot"></div>
+            <div class="lore-content-block">
+              <h3 class="lore-item-title">Personality</h3>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;Playful and chaotic with bursts of unexpectedly profound gaming takes. Loves long stream sessions, snacks, and finding the most unhinged speedrun strats in casual games.</p>
+            </div>
+          </div>
+          <div class="lore-item">
+            <div class="lore-dot"></div>
+            <div class="lore-content-block">
+              <h3 class="lore-item-title">Fun Facts</h3>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;I can smell a sequel from miles away. I watch movies till the after credits. I'm usually one of the last ones out of the theatre. Thinks the tutorial should always be skippable.(Except in Driver - get gud)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── LINKS ───────────────── -->
+    <section class="section links-section" id="links">
+      <div class="section-inner links-inner">
+        <div class="section-label">find me</div>
+        <h2 class="section-title">All My Links</h2>
+        <div class="links-list">
+
+          <a href="https://twitch.tv/ProfessionalFrogger" target="_blank" rel="noopener noreferrer" class="link-pill link-twitch">
+            <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/>
+            </svg>
+            <span class="link-name">Twitch</span>
+            <span class="link-handle">@ProfessionalFrogger</span>
+            <svg class="link-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+
+          <a href="https://youtube.com/@ProfessionalFrogger" target="_blank" rel="noopener noreferrer" class="link-pill link-youtube">
+            <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+            </svg>
+            <span class="link-name">YouTube</span>
+            <span class="link-handle">@ProfessionalFrogger</span>
+            <svg class="link-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+
+          <a href="https://discord.gg/tX2BAM5D" target="_blank" rel="noopener noreferrer" class="link-pill link-discord">
+            <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.08.11 18.1.129 18.115a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+            <span class="link-name">Discord</span>
+            <span class="link-handle">ProfessionalFrogger's Warren</span>
+            <svg class="link-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+
+          <a href="https://barq.app/ProfessionalFrogger" target="_blank" rel="noopener noreferrer" class="link-pill link-barq">
+            <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <ellipse cx="12" cy="15.5" rx="7" ry="6.5"/>
+              <circle cx="5.5" cy="9" r="2.8"/>
+              <circle cx="12" cy="7" r="2.8"/>
+              <circle cx="18.5" cy="9" r="2.8"/>
+            </svg>
+            <span class="link-name">Barq</span>
+            <span class="link-handle">@ProfessionalFrogger</span>
+            <svg class="link-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── CONTACT ───────────────── -->
+    <section class="section contact-section" id="contact">
+      <div class="section-inner contact-inner">
+        <div class="section-label">get in touch</div>
+        <h2 class="section-title">Say Hello</h2>
+        <p class="contact-desc">For collabs, commissions, business inquiries, or just to say hi — Discord is the best way to reach me. You can also slide into the relevant platforms below.</p>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <!-- Message bubble icon -->
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="5" y="8" width="30" height="20" rx="6" fill="var(--purple-main)" opacity="0.9"/>
+              <path d="M10 28 L8 35 L18 30" fill="var(--purple-main)" opacity="0.9"/>
+              <line x1="11" y1="16" x2="29" y2="16" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+              <line x1="11" y1="21" x2="23" y2="21" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+            </svg>
+            <div>
+              <strong>Discord</strong>
+              <span>Best for quick convos</span>
+            </div>
+          </div>
+          <div class="contact-method">
+            <!-- Stream icon -->
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="20" cy="20" r="14" stroke="var(--pink-mid)" stroke-width="2.5"/>
+              <circle cx="20" cy="20" r="9" stroke="var(--pink-mid)" stroke-width="2.5" opacity="0.6"/>
+              <circle cx="20" cy="20" r="4" fill="var(--pink-mid)"/>
+            </svg>
+            <div>
+              <strong>Twitch Chat</strong>
+              <span>Say hi during streams</span>
+            </div>
+          </div>
+          <div class="contact-method">
+            <!-- Business icon -->
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="8" y="14" width="24" height="18" rx="3" fill="var(--brown-mid)" opacity="0.8"/>
+              <rect x="14" y="8" width="12" height="8" rx="2" fill="var(--brown-mid)" opacity="0.8"/>
+              <line x1="8" y1="22" x2="32" y2="22" stroke="var(--brown-pale)" stroke-width="2"/>
+              <rect x="17" y="19" width="6" height="6" rx="1" fill="var(--brown-pale)" opacity="0.7"/>
+            </svg>
+            <div>
+              <strong>Business</strong>
+              <span>Via Discord DMs</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://discord.gg/ProfessionalFrogger" target="_blank" rel="noopener noreferrer" class="btn btn-primary contact-btn">Open Discord</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ───────────────── FOOTER ───────────────── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <!-- Small bunny ears -->
+        <!-- <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="10" cy="11" rx="4" ry="9" fill="var(--pink-mid)" opacity="0.7"/>
+          <ellipse cx="10" cy="11" rx="2" ry="6" fill="var(--pink-inner)" opacity="0.7"/>
+          <ellipse cx="22" cy="11" rx="4" ry="9" fill="var(--pink-mid)" opacity="0.7"/>
+          <ellipse cx="22" cy="11" rx="2" ry="6" fill="var(--pink-inner)" opacity="0.7"/>
+          <ellipse cx="16" cy="22" rx="9" ry="8" fill="var(--brown-light)" opacity="0.5"/>
+        </svg> -->
+        <span>ProfessionalFrogger</span>
+      </div>
+      <p class="footer-copy">made with fluff and good vibes. not actually a frog.</p>
+      <div class="footer-links">
+        <a href="https://twitch.tv/ProfessionalFrogger" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
+        </a>
+        <a href="https://youtube.com/@ProfessionalFrogger" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+        </a>
+        <a href="https://discord.gg/ProfessionalFrogger" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.08.11 18.1.129 18.115a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+        </a>
+        <a href="https://barq.app/ProfessionalFrogger" target="_blank" rel="noopener noreferrer" aria-label="Barq">
+          <svg viewBox="0 0 24 24" fill="currentColor"><ellipse cx="12" cy="15.5" rx="7" ry="6.5"/><circle cx="5.5" cy="9" r="2.8"/><circle cx="12" cy="7" r="2.8"/><circle cx="18.5" cy="9" r="2.8"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
