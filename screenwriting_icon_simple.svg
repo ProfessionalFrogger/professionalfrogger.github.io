@@ -1,0 +1,18 @@
+<svg width="100%" viewBox="0 0 100 104" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Page -->
+  <rect x="18" y="8" width="52" height="66" rx="5" fill="var(--color-background-primary)" stroke="var(--color-border-primary)" stroke-width="1.5" style="fill:rgb(48, 48, 46);stroke:rgba(222, 220, 209, 0.4);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Scene heading bar -->
+  <rect x="24" y="16" width="40" height="6" rx="1.5" fill="var(--color-text-secondary)" opacity="0.5" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Centered character name -->
+  <rect x="32" y="28" width="24" height="5" rx="1.5" fill="var(--color-text-secondary)" opacity="0.65" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.65;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Dialogue lines -->
+  <rect x="27" y="38" width="34" height="4" rx="1.5" fill="var(--color-border-primary)" opacity="0.7" style="fill:rgba(222, 220, 209, 0.4);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <rect x="27" y="46" width="26" height="4" rx="1.5" fill="var(--color-border-primary)" opacity="0.5" style="fill:rgba(222, 220, 209, 0.4);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Transition (flush right) -->
+  <rect x="42" y="60" width="22" height="4" rx="1.5" fill="var(--color-border-primary)" opacity="0.5" style="fill:rgba(222, 220, 209, 0.4);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+</svg>
